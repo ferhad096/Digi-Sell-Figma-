@@ -89,6 +89,7 @@ p {
 .text-linear {
   background: linear-gradient(238.66deg, #0283e9 -18.13%, #fc01ca 120.27%);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
