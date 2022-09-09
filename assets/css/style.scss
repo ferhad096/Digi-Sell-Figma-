@@ -218,8 +218,15 @@ header {
     padding: 10px 0;
     .logo {
       padding-left: 30px;
-      img {
-        height: 50px;
+      .left {
+        color: $white;
+        background: $linear;
+        border-radius: 50%;
+        padding: 15px 12px;
+      }
+      .right {
+        color: $primary;
+        font-size: 20px;
       }
     }
     .categories {
@@ -242,7 +249,7 @@ header {
           opacity: 0;
           visibility: hidden;
           left: 0;
-          width: 100%;
+          width: 220px;
           background-color: $white;
           transition: 0.3s ease-in-out;
           box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
@@ -506,7 +513,7 @@ header {
 }
 
 #blog {
-  .swiper{
+  .swiper {
     padding: 20px;
     .box {
       border-radius: 10px;
@@ -517,31 +524,31 @@ header {
         height: 210px;
         width: 100%;
       }
-      .time{
+      .time {
         display: flex;
         align-items: center;
         margin: 10px 0;
-        p{
+        p {
           margin-bottom: 0;
         }
-        .author{
+        .author {
           margin-left: auto;
         }
       }
-      h4{
+      h4 {
         margin: 20px 0;
       }
     }
   }
 }
 
-footer{
+footer {
   background: $primary;
-  .footer-top{
+  .footer-top {
     background: rgba(255, 255, 255, 0.12);
     padding: 20px 0 30px;
     margin-bottom: 70px;
-    span{
+    span {
       color: $white;
       font-size: 20px;
     }
@@ -565,19 +572,19 @@ footer{
       }
     }
   }
-  .footer-bottom{
+  .footer-bottom {
     text-align: center;
-    li{
+    li {
       margin-left: 60px;
-      a{
+      a {
         color: $white;
-        transition: .3s ease-in-out;
-        &:hover{
+        transition: 0.3s ease-in-out;
+        &:hover {
           color: $purple;
         }
       }
     }
-    span{
+    span {
       color: $white;
       display: inline-block;
       margin-top: 70px;
@@ -598,9 +605,6 @@ footer{
       .categories {
         .drop {
           .main {
-            .text {
-              display: none;
-            }
             i,
             img {
               padding: 0;
@@ -623,9 +627,9 @@ footer{
   section {
     padding: 30px 0;
   }
-  footer{
-    .footer-bottom{
-      li{
+  footer {
+    .footer-bottom {
+      li {
         margin-left: 30px;
       }
     }
@@ -637,6 +641,36 @@ footer{
     .img {
       img {
         height: auto;
+      }
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  header {
+    .content {
+      .logo {
+        .right {
+          display: none;
+        }
+      }
+      .categories {
+        margin-left: 5px;
+        .drop {
+          .main {
+            .text {
+              display: none;
+            }
+            i {
+              display: none;
+            }
+          }
+        }
+      }
+      .right{
+        a+a{
+          margin-left: 0;
+        }
       }
     }
   }
