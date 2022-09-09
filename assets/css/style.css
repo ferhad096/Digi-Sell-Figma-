@@ -535,6 +535,9 @@ footer .footer-top form button {
   display: flex;
   align-items: center;
 }
+footer .footer-bottom {
+  text-align: center;
+}
 footer .footer-bottom li {
   margin-left: 60px;
 }
@@ -544,6 +547,11 @@ footer .footer-bottom li a {
 }
 footer .footer-bottom li a:hover {
   color: #7158e2;
+}
+footer .footer-bottom span {
+  color: #ffffff;
+  display: inline-block;
+  margin-top: 70px;
 }
 
 @media (max-width: 992px) {
