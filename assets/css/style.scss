@@ -289,7 +289,7 @@ header {
           position: absolute;
           background: $linear;
           border-radius: 50%;
-          padding: 1px 4px;
+          padding: 0 5px;
           border: 2px solid $white;
           font-size: 10px;
           top: 3px;
@@ -624,7 +624,7 @@ footer {
   #hero{
     .hero-content{
       position: absolute;
-      top: 60%;
+      top: 58%;
     }
   }
   section {
@@ -640,16 +640,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .product {
-    .img {
-      img {
-        height: auto;
-      }
-    }
-  }
-}
-
-@media(max-width: 600px) {
   header {
     .content {
       .logo {
@@ -677,4 +667,35 @@ footer {
       }
     }
   }
+  .product {
+    .img {
+      img {
+        height: auto;
+      }
+    }
+  }
 }
+
+@media(max-width: 600px) {
+  #hero{
+    .background{
+      .one,.two,.three,.four,.five{
+        max-width: 25%;
+      }
+      .one{
+        left: 14%;
+        top: 43%;
+      }
+      .two{
+        top: 64%;
+      }
+      .three{
+        left: 26%;
+      }
+      .five{
+        left: 40%;
+        top: 38%;
+      }
+    }
+  }
+} 
