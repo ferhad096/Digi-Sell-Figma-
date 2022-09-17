@@ -34,35 +34,14 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// Add to Cart //
-const productsToCart = document.querySelectorAll(".addCart");
-const productsToWish = document.querySelectorAll(".addWish");
-const cart = document.querySelector(".cart");
-const wish = document.querySelector(".wish");
-
-for (let i = 0; i < productsToCart.length; i++) {
-  productsToCart[i].addEventListener("click", function (e) {
-    cart.innerHTML = Number(cart.innerHTML) + 1 ;
-    e.preventDefault();
-  });
-}
-
-for (let i = 0; i < productsToWish.length; i++) {
-  productsToWish[i].addEventListener("click", function (e) {
-    wish.innerHTML = Number(wish.innerHTML) + 1 ;
-    e.preventDefault();
-  });
-}
-
-
 // Tab panel //
 
 window.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('[role="tab"]');
   const tabList = document.querySelector('[role="tablist"]');
 
-  console.log(tabs);
-  console.log(tabList);
+  // console.log(tabs);
+  // console.log(tabList);
   // Add a click event handler to each tab
   tabs.forEach((tab) => {
     tab.addEventListener('click', changeTabs);

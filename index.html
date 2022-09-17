@@ -66,12 +66,12 @@
                     <a class="wishlist button" href="#">
                         <img class="img-fluid" src="assets/images/Heart.png" alt="">
                         <span class="button-hover"></span>
-                        <span class="counter cart">0</span>
+                        <span class="counter wish">0</span>
                     </a>
-                    <a class="cart button" href="#">
+                    <a class="addToCart button" href="#">
                         <img class="img-fluid" src="assets/images/Basket.png" alt="">
                         <span class="button-hover"></span>
-                        <span class="counter wish">0</span>
+                        <span class="counter cart">0</span>
                     </a>
                     <a class="signIn button" href="#">
                         <img class="img-fluid" src="assets/images/User.png" alt="">
@@ -82,6 +82,67 @@
             </div>
         </div>
     </header>
+
+
+    <!-- Cart -->
+    <div class="shopping-cart">
+        <div class="cart-overlay"></div>
+        <div class="cart-content">
+            <div class="cart-header"> 
+                <div class="text">Shopping Cart</div>
+                <div class="close-cart">
+                    <span></span>
+                </div>
+            </div>
+            <div class="cart-body">
+                <div class="products">
+                    <ul class="cardBox">
+                </ul>
+                </div>
+            </div>
+            <div class="checkout">
+                <div class="d-flex justify-content-between">
+                    <span class="subtotal">Subtotal</span>
+                    <p>$250</p>
+                </div>
+                <a class="button" href="#">
+                    <span class="button-hover"></span>
+                    Checkout
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Wishlist -->
+    <div class="wishlist-cart">
+        <div class="wish-overlay"></div>
+        <div class="wish-content">
+            <div class="wish-header"> 
+                <div class="text">Wishlist</div>
+                <div class="close-wish">
+                    <span></span>
+                </div>
+            </div>
+            <div class="wish-body">
+                <div class="products">
+                    <ul class="wishBox">
+                </ul>
+                </div>
+            </div>
+            <div class="wishToCart">
+                <div class="d-flex justify-content-between">
+                    <span class="subtotal">Subtotal</span>
+                    <p>$250</p>
+                </div>
+                <a class="button" href="#">
+                    <span class="button-hover"></span>
+                    Add to Cart
+                </a>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Hero -->
     <div id="hero">
@@ -672,6 +733,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/wish.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

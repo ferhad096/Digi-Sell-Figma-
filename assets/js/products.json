@@ -1,0 +1,90 @@
+[
+    {
+        "id" : 1,
+        "image" : "assets/images/featured1.jpg",
+        "name" : "Hazel - Clean Minimalist Multi-Pu...",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    },
+    {
+        "id" : 2,
+        "image" : "assets/images/featured2.jpg",
+        "name" : "Monstroid2 - Multipurpose Modular...",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    },
+    {
+        "id" : 3,
+        "image" : "assets/images/featured3.jpg",
+        "name" : "Techno - IT Solutions & Business ...",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    },
+    {
+        "id" : 4,
+        "image" : "assets/images/product1.png",
+        "name" : "Monstroid2 - Multipurpose Mo...",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    },
+    {
+        "id" : 5,
+        "image" : "assets/images/product2.png",
+        "name" : "Hazel - Clean Minimalist Multi...",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    },
+    {
+        "id" : 6,
+        "image" : "assets/images/product3.png",
+        "name" : "Techno - IT Solutions & Business...",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    },
+    {
+        "id" : 7,
+        "image" : "assets/images/product4.png",
+        "name" : "PathSoft - IT Solutions for Your ...",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    },
+    {
+        "id" : 8,
+        "image" : "assets/images/product5.png",
+        "name" : "Brave Theme Multipurpose",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    },
+    {
+        "id" : 9,
+        "image" : "assets/images/product6.png",
+        "name" : "Technology & IT Solution Servic...",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    },
+    {
+        "id" : 10,
+        "image" : "assets/images/product7.png",
+        "name" : "Techno - IT Solutions & Business...",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    },
+    {
+        "id" : 11,
+        "image" : "assets/images/product8.png",
+        "name" : "PathSoft - IT Solutions for Your ...",
+        "price" : 50,
+        "quantity" : 1,
+        "sale" : 258
+    }
+]
