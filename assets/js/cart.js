@@ -36,7 +36,7 @@ items();
 const addToCart = document.querySelectorAll(".addCart");
 let products = [];
 for (let i = 0; i < addToCart.length; i++) {
-  addToCart[i].addEventListener("click", function () {
+  addToCart[i].addEventListener("click", function (e) {
     if (typeof Storage !== "undefined") {
       let product = {
         id: i + 1,
@@ -67,6 +67,7 @@ for (let i = 0; i < addToCart.length; i++) {
     } else {
       console.log("not");
     }
+    e.preventDefault();
   });
 }
 

@@ -22,7 +22,7 @@ closeWish.addEventListener("click", () => {
 const addToWish = document.querySelectorAll(".addWish");
 let productsWish = [];
 for (let i = 0; i < addToWish.length; i++) {
-  addToWish[i].addEventListener("click", function () {
+  addToWish[i].addEventListener("click", function (e) {
     if (typeof Storage !== "undefined") {
       let product = {
         id: i + 1,
@@ -53,6 +53,7 @@ for (let i = 0; i < addToWish.length; i++) {
     } else {
       console.log("not");
     }
+    e.preventDefault();
   });
 }
 
@@ -87,9 +88,9 @@ if (JSON.parse(localStorage.getItem("addedWish"))[0] === null) {
       data.quantity +
       '</p><p class="ib">$' +
       data.price +
-      '</p><a href="#" onclick = deleted(this);>X</a></div></div></li>';
+      '</p><a href="#" onclick = deletedWish(this);>X</a></div></div></li>';
   });
-  function deleted(e) {
+  function deletedWish(e) {
     let items = [];
     JSON.parse(localStorage.getItem("addedWish")).map((data) => {
       if (data.id != e.parentElement.children[0].textContent) {
