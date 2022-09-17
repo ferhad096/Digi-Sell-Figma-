@@ -73,7 +73,7 @@ wishCount.innerHTML = quantityWish;
 
 const wishBox = document.querySelector(".wishBox");
 let wishData = "";
-if (JSON.parse(localStorage.getItem("addedWish"))[0] === null) {
+if (JSON.parse(localStorage.getItem("addedWish")) === null || JSON.parse(localStorage.getItem("addedWish"))[0] === null ) {
   wishData += "<li>No Products Found</li>";
 } else {
   JSON.parse(localStorage.getItem("addedWish")).map((data) => {

@@ -336,32 +336,32 @@
                 <h2>Let’s Check Out News Product Theme Templates & Plugin</h2>
             </div>
             <div class="categories">
-                <ul id="tabs" role="tablist" aria-label="products">
+                <ul id="tabs">
                     <li >
-                        <a role="tab" tabindex="0" aria-selected="true" aria-controls="panel-1" id="tab-1" class="button" href="#">All Categories</a>
+                        <a data-filter="all" class="button" href="#">All Categories</a>
                     </li>
                     <li >
-                        <a role="tab" tabindex="-1" aria-controls="panel-2" id="tab-2" href="#">HTML Design</a>
+                        <a data-filter="html" href="#">HTML Design</a>
                     </li>
                     <li >
-                        <a role="tab" tabindex="-1" aria-controls="panel-3" id="tab-3" href="#">WP Themes</a>
+                        <a data-filter="wp" href="#">WP Themes</a>
                     </li>
                     <li >
-                        <a role="tab" tabindex="-1" aria-controls="panel-4" id="tab-4" href="#">CMS Themes</a>
+                        <a data-filter="cms" href="#">CMS Themes</a>
                     </li>
                     <li >
-                        <a role="tab" tabindex="-1" aria-controls="panel-5" id="tab-5" href="#">eCommerce</a>
+                        <a data-filter="eco" href="#">eCommerce</a>
                     </li>
                     <li >
-                        <a role="tab" tabindex="-1" aria-controls="panel-6" id="tab-6" href="#">Blogging</a>
+                        <a data-filter="blog" href="#">Blogging</a>
                     </li>
                     <li >
-                        <a role="tab" tabindex="-1" aria-controls="panel-7" id="tab-7" href="#">UI Templates</a>
+                        <a data-filter="ui" href="#">UI Templates</a>
                     </li>
                 </ul>
             </div>
-            <div class="row">
-                <div role="tabpanel" aria-labelledby="tab-1" id="panel-1" class="col-lg-3 col-md-6 col-12">
+            <div class="row products-view">
+                <div data-category="html" class="col-lg-3 col-md-6 col-12">
                     <div class="product">
                         <div class="img">
                             <img class="img-fluid" src="assets/images/product1.png" alt="">
@@ -389,7 +389,7 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" aria-labelledby="tab-1" id="panel-1" class="col-lg-3 col-md-6 col-12">
+                <div data-category="wp" class="col-lg-3 col-md-6 col-12">
                     <div class="product">
                         <div class="img">
                             <img class="img-fluid" src="assets/images/product2.png" alt="">
@@ -417,7 +417,7 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" aria-labelledby="tab-2" id="panel-2" class="col-lg-3 col-md-6 col-12">
+                <div data-category="html" class="col-lg-3 col-md-6 col-12">
                     <div class="product">
                         <div class="img">
                             <img class="img-fluid" src="assets/images/product3.png" alt="">
@@ -445,7 +445,7 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" aria-labelledby="tab-2" id="panel-2" class="col-lg-3 col-md-6 col-12">
+                <div data-category="cms" class="col-lg-3 col-md-6 col-12">
                     <div class="product">
                         <div class="img">
                             <img class="img-fluid" src="assets/images/product4.png" alt="">
@@ -473,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" aria-labelledby="tab-3" id="panel-3" class="col-lg-3 col-md-6 col-12">
+                <div data-category="eco" class="col-lg-3 col-md-6 col-12">
                     <div class="product">
                         <div class="img">
                             <img class="img-fluid" src="assets/images/product5.png" alt="">
@@ -501,7 +501,7 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" aria-labelledby="tab-4" id="panel-4" class="col-lg-3 col-md-6 col-12">
+                <div data-category="blog" class="col-lg-3 col-md-6 col-12">
                     <div class="product">
                         <div class="img">
                             <img class="img-fluid" src="assets/images/product6.png" alt="">
@@ -529,7 +529,7 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" aria-labelledby="tab-5" id="panel-5" class="col-lg-3 col-md-6 col-12">
+                <div data-category="ui" class="col-lg-3 col-md-6 col-12">
                     <div class="product">
                         <div class="img">
                             <img class="img-fluid" src="assets/images/product7.png" alt="">
@@ -557,7 +557,7 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" aria-labelledby="tab-6" id="panel-6" class="col-lg-3 col-md-6 col-12">
+                <div data-category="eco" class="col-lg-3 col-md-6 col-12">
                     <div class="product">
                         <div class="img">
                             <img class="img-fluid" src="assets/images/product8.png" alt="">

@@ -1,14 +1,14 @@
-// Category select //
-const category = document.querySelectorAll("#products .categories a");
+// // Category select //
+// const category = document.querySelectorAll("#products .categories a");
 
-for (let i = 0; i < category.length; i++) {
-  category[i].addEventListener("click", function (e) {
-    let current = document.querySelector("#products .categories .button");
-    current.classList = current.classList.remove("button");
-    this.classList += " button";
-    e.preventDefault();
-  });
-}
+// for (let i = 0; i < category.length; i++) {
+//   category[i].addEventListener("click", function (e) {
+//     let current = document.querySelector("#products .categories .button");
+//     current.classList = current.classList.remove("button");
+//     this.classList += " button";
+//     e.preventDefault();
+//   });
+// }
 
 // Swiper //
 const swiper = new Swiper(".swiper", {
@@ -36,40 +36,32 @@ const swiper = new Swiper(".swiper", {
 
 // Tab panel //
 
-window.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelectorAll('[role="tab"]');
-  const tabList = document.querySelector('[role="tablist"]');
+let categories = document.querySelectorAll("#tabs li a");
+let main = document.querySelector(".products-view").children;
+console.log(main);
+for (let i = 0; i < categories.length; i++) {
+  categories[i].onclick = function (e) { 
+    for (let j = 0; j < categories.length; j++) {
+      categories[j].classList.remove("button");
+    }
+    this.classList.add("button");
+    const showItems = this.getAttribute("data-filter");
+    for (let x = 0; x < main.length; x++) {
+      main[x].style.transform = "scale(0)";
+      setTimeout(() => {
+        main[x].style.display = "none";
+      }, 500);
 
-  // console.log(tabs);
-  // console.log(tabList);
-  // Add a click event handler to each tab
-  tabs.forEach((tab) => {
-    tab.addEventListener('click', changeTabs);
-  });
-
-});
-
-
-function changeTabs(e) {
-  const target = e.target;
-  const parent = target.parentNode;
-  const grandparent = parent.parentNode;
-  
-  // Remove all current selected tabs
-  parent
-  .querySelectorAll('[aria-selected="true"]')
-  .forEach((t) => t.setAttribute('aria-selected', false));
-  
-  // Set this tab as selected
-  target.setAttribute('aria-selected', true);
-  
-  // Hide all tab panels
-  grandparent
-  .querySelectorAll('[role="tabpanel"]')
-  .forEach((p) => p.setAttribute('hidden', true));
-  
-  // Show the selected panel
-  grandparent.parentNode
-  .querySelectorAll(`#${target.getAttribute('aria-controls')}`)
-  .forEach((z) => z.removeAttribute('hidden'));
+      if (
+        main[x].getAttribute("data-category") == showItems ||
+        showItems == "all"
+      ) {
+        main[x].style.transform = "scale(1)";
+        setTimeout(() => {
+          main[x].style.display = "block";
+        }, 500);
+      }
+    }
+    e.preventDefault();
+  };
 }

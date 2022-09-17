@@ -86,7 +86,7 @@ cartCount.innerHTML = quantity;
 
 const cardBox = document.querySelector(".cardBox");
 let boxData = "";
-if (JSON.parse(localStorage.getItem("addedCart"))[0] === null) {
+if (JSON.parse(localStorage.getItem("addedCart")) === null || JSON.parse(localStorage.getItem("addedCart"))[0] === null) {
   boxData += "<li>No Products Found</li>";
 } else {
   JSON.parse(localStorage.getItem("addedCart")).map((data) => {
