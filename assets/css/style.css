@@ -910,6 +910,9 @@ header .content .categories .drop .main img {
   }
 }
 @media (max-width: 600px) {
+  a .preview-button-content {
+    display: none;
+  }
   #hero .background .one,
 #hero .background .two,
 #hero .background .three,

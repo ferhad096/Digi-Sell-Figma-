@@ -66,7 +66,7 @@ if (
       data.name +
       "</h3><span>Price <p>$" +
       data.price +
-      '</p></span></div><div class="right"><a class="button addCart" href="#"><span class="button-hover"></span><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a><a class="button addWish" href="#"><span class="button-hover"></span><i class="fa-solid fa-heart"></i>Add Wishlist</a></div></div>';
+      '</p></span></div><div class="right"><a class="button addCart" href="#"><span class="button-hover"></span><i class="fa-solid fa-cart-shopping"></i><span class="preview-button-content">Add to Cart</span></a><a class="button addWish" href="#"><span class="button-hover"></span><i class="fa-solid fa-heart"></i><span class="preview-button-content">Add Wishlist</span></a></div></div>';
   });
 }
 

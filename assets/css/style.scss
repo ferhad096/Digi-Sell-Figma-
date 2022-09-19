@@ -994,7 +994,13 @@ footer {
 }
 
 @media (max-width: 600px) {
-  #hero {
+
+a{
+  .preview-button-content{
+    display: none;
+  }
+}
+#hero {
     .background {
       .one,
       .two,
