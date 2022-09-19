@@ -38,7 +38,6 @@ const swiper = new Swiper(".swiper", {
 
 let categories = document.querySelectorAll("#tabs li a");
 let main = document.querySelector(".products-view").children;
-console.log(main);
 for (let i = 0; i < categories.length; i++) {
   categories[i].onclick = function (e) { 
     for (let j = 0; j < categories.length; j++) {
